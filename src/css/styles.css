@@ -1,0 +1,165 @@
+/* Importando fonte futurista */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Estilo geral */
+body {
+    background: radial-gradient(circle at top, #1a1a2e, #0f3460);
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Efeito de texto neon */
+.neon-text {
+    text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 20px #00eaff;
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Botão futurista */
+.button,
+.btn-glow {
+    background: linear-gradient(90deg, #00eaff, #0072ff);
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #00eaff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover,
+.btn-glow:hover {
+    box-shadow: 0 0 30px #00eaff;
+    transform: scale(1.1);
+}
+
+/* Cabeçalho estilizado */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #00eaff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    text-shadow: 0 0 10px #00eaff;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 150px 20px;
+    background: linear-gradient(180deg, #0f3460, #1a1a2e);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #00eaff;
+    z-index: 2;
+    position: relative;
+}
+
+.hero p {
+    font-size: 18px;
+    z-index: 2;
+    position: relative;
+}
+
+/* Seções */
+.section {
+    padding: 60px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0, 238, 255, 0.3);
+}
+
+/* Rodapé */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-container img {
+    max-width: 50px;
+}
+
+.footer-info,
+.footer-social,
+.footer-contact {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
