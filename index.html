@@ -7,7 +7,7 @@
     <title>Astro Software</title>
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/styles.css">
-    <script defer src="src/js/scroll.js"></script>
+    <script src="src/js/scroll.js" defer></script>
 </head>
 
 <body>
@@ -27,55 +27,62 @@
     </header>
 
     <main>
+        <!-- Seção Hero com layout modificado -->
         <section id="home" class="hero background-stars">
             <div class="hero-overlay"></div>
-            <div class="container">
-                <h2 class="neon-text">Explorando o Futuro com Tecnologia</h2>
-                <p>Transformamos ideias em inovação digital.</p>
-                <a href="#servicos" class="btn-glow">Conheça nossos serviços</a>
+            <div class="container hero-section">
+                <div class="hero-text">
+                    <h2 class="neon-text">Explorando o Futuro com Tecnologia</h2>
+                    <p>Transformamos ideias em inovação digital.</p>
+                    <a href="#servicos" class="btn-glow">Conheça nossos serviços</a>
+                </div>
+
             </div>
         </section>
 
+        <!-- Outras seções permanecem inalteradas -->
         <section id="servicos" class="services section scroll-reveal">
             <div class="container">
-                <h2 class="neon-text">Nossos Serviços</h2>
+                <h2 class="neon-text">Nossos Planos</h2>
                 <div class="service-list">
-                    <div class="service-item">🚀 Desenvolvimento Web</div>
-                    <div class="service-item">🛰️ Inteligência Artificial</div>
-                    <div class="service-item">🌌 Soluções em Nuvem</div>
+                    <div class="service-item">
+                        <img src="public/images/Galáxias.jpg" alt="Plano Galáxias">
+                        <h3>🌌 Galáxias</h3> <br>
+                        <p>Projeto Pequeno</p> <br>
+                        <p>Institucionais ou estáticos</p> <br>
+                        <p><strong>Valor aprox.</strong> R$ 500,00</p>
+                        <p><strong>Prazo médio:</strong> 1 Mês </p>
+                        <a href="#contato" class="btn-glow">Saber mais</a>
+                    </div>
+                    <div class="service-item">
+                        <img src="public/images/Via Láctea Deluxe.png" alt="Plano Via Láctea Deluxe">
+                        <h3>🌠 Via Láctea Deluxe</h3> <br>
+                        <p>Projeto Medio </p> <br>
+                        <p>Startups e ideias MVPs</p> <br>
+                        <p><strong>Valor aprox.</strong> R$ 800,00</p>
+                        <p><strong>Prazo médio:</strong> 2 Meses</p>
+                        <a href="#contato" class="btn-glow">Saber mais</a>
+                    </div>
+                    <div class="service-item">
+                        <img src="public/images/Big Bang.jpg" alt="Plano Big Bang">
+                        <h3>💥 Big Bang</h3> <br>
+                        <p>Projeto Grande </p> <br>
+                        <p>E-commerce e App</p> <br>
+                        <p><strong>Valor aprox.</strong> 2k</p>
+                        <p></p>
+                        <p><strong>Prazo médio:</strong> 3 Meses</p>
+                        <a href="#contato" class="btn-glow">Saber mais</a>
+                    </div>
+                    <div class="service-item">
+                        <img src="public/images/Cometa SoftDrone.jpg" alt="Plano Cometa SoftDrone">
+                        <h3>☄️ Cometa SoftDrone</h3> <br>
+                        <p>Projeto Gigante</p> <br>
+                        <p>Sites, App, integração de IA, </p> <br>
+                        <p><strong>Valor aprox.</strong> R$ 5k</p>
+                        <p><strong>Prazo médio:</strong> 5 Meses</p>
+                        <a href="#contato" class="btn-glow">Saber mais</a>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="portfolio" class="portfolio section scroll-reveal">
-            <div class="container">
-                <h2 class="neon-text">Portfólio</h2>
-                <p>Veja alguns dos nossos projetos incríveis.</p>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item">🌠 Projeto 1</div>
-                    <div class="portfolio-item">🚀 Projeto 2</div>
-                    <div class="portfolio-item">🔭 Projeto 3</div>
-                </div>
-            </div>
-        </section>
-
-        <section id="blog" class="blog section scroll-reveal">
-            <div class="container">
-                <h2 class="neon-text">Nosso Blog</h2>
-                <p>Fique por dentro das últimas tendências em tecnologia.</p>
-                <div class="blog-list">
-                    <div class="blog-post">📝 Artigo 1</div>
-                    <div class="blog-post">📡 Artigo 2</div>
-                    <div class="blog-post">⚡ Artigo 3</div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contato" class="contact section scroll-reveal">
-            <div class="container">
-                <h2 class="neon-text">Entre em Contato</h2>
-                <p>Fale conosco para desenvolver seu projeto.</p>
-                <a href="#" class="btn-glow">Fale pelo WhatsApp</a>
             </div>
         </section>
     </main>
@@ -94,17 +101,15 @@
                 <p>Rua Exemplo, 123 - Centro, Cidade - Estado, 00000-000</p>
             </div>
             <div class="footer-social">
-                <a href="#"><img src="public/images/whatsapp-icon.png" alt="WhatsApp"></a>
-                <a href="#"><img src="public/images/instagram-icon.png" alt="Instagram"></a>
-                <a href="#"><img src="public/images/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="" alt="WhatsApp"></a>
+                <a href="#"><img src="public/images/icons8-instagram-30.png" alt="Instagram"></a>
+                <a href="#"><img src="public/images/icons8-linkedin-30.png" alt="LinkedIn"></a>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2025 Astro Software. Todos os direitos reservados. v1.0.0</p>
         </div>
     </footer>
-    <script src="src/js/scroll.js" defer></script>
-
 </body>
 
 </html>
