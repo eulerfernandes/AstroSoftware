@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #f45100;
+    --secondary-color: #1c1c1c;
+    --text-color: #080808;
+    --background-color: #ffffff;
+    --footer-bg: #f1efef;
+    --neon-color: #ffffff;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Container centralizado */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--secondary-color);
+    padding: 15px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+h1.neon-text {
+    font-size: 2.5rem;
+    color: var(--neon-color);
+    text-shadow: 0 0 8px var(--neon-color), 0 0 20px var(--neon-color);
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Post do Blog */
+.blog-post {
+    background: rgba(240, 239, 239, 0.914);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgb(19, 18, 18);
+}
+
+.blog-post h2 {
+    color: var(--primary-color);
+}
+
+.blog-post img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--footer-bg);
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+.footer-bottom {
+    color: var(--text-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1.neon-text {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

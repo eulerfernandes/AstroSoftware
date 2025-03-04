@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astro Software</title>
-    <link rel="stylesheet" href="src/css/reset.css">
+
     <link rel="stylesheet" href="src/css/styles.css">
-    <script src="src/js/scroll.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 </head>
 
 <body>
-    <header>
+    <!-- <header>
+
         <div class="container">
             <h1 class="neon-text">Astro Software</h1>
             <nav>
@@ -24,7 +27,8 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </header> -->
+
 
     <main>
         <!-- Seção Hero com layout modificado -->
@@ -32,7 +36,20 @@
             <div class="hero-overlay"></div>
             <div class="container hero-section">
             </div>
+            <div class="btn-center">
+                <a href="https://wa.me/5573981576870?text=Olá%2C%20quero%20saber%20mais%20sobre%20seus%20serviços!"
+                    target="_blank">
+                    <button id="ctaButton">IMPULSIONE SEU NEGÓCIO </button>
+                </a>
+            </div>
+
+
+
+
         </section>
+
+
+
 
         <!-- Outras seções permanecem inalteradas -->
         <section id="servicos" class="services section scroll-reveal">
@@ -46,7 +63,8 @@
                         <p>Institucionais ou estáticos</p> <br>
                         <p><strong>Valor aprox.</strong> R$ 500,00</p>
                         <p><strong>Prazo médio:</strong> 1 Mês </p>
-                        <a href="#contato" class="btn-glow">Saber mais</a>
+                        <a href="https://wa.me/5573981576870?text=Olá%2C%20quero%20saber%20mais%20sobre%20seus%20serviços!"
+                            class="btn-glow">Saber mais</a>
                     </div>
                     <div class="service-item">
                         <img src="public/images/Via Láctea Deluxe.png" alt="Plano Via Láctea Deluxe">
@@ -55,7 +73,8 @@
                         <p>Startups e ideias MVPs</p> <br>
                         <p><strong>Valor aprox.</strong> R$ 800,00</p>
                         <p><strong>Prazo médio:</strong> 2 Meses</p>
-                        <a href="#contato" class="btn-glow">Saber mais</a>
+                        <a href="https://wa.me/5573981576870?text=Olá%2C%20quero%20saber%20mais%20sobre%20seus%20serviços!"
+                            class="btn-glow">Saber mais</a>
                     </div>
                     <div class="service-item">
                         <img src="public/images/Big Bang.jpg" alt="Plano Big Bang">
@@ -65,7 +84,8 @@
                         <p><strong>Valor aprox.</strong> 2k</p>
                         <p></p>
                         <p><strong>Prazo médio:</strong> 3 Meses</p>
-                        <a href="#contato" class="btn-glow">Saber mais</a>
+                        <a href="https://wa.me/5573981576870?text=Olá%2C%20quero%20saber%20mais%20sobre%20seus%20serviços!"
+                            class="btn-glow">Saber mais</a>
                     </div>
                     <div class="service-item">
                         <img src="public/images/Cometa SoftDrone.jpg" alt="Plano Cometa SoftDrone">
@@ -74,7 +94,8 @@
                         <p>Sites, App, integração de IA, </p> <br>
                         <p><strong>Valor aprox.</strong> R$ 5k</p>
                         <p><strong>Prazo médio:</strong> 5 Meses</p>
-                        <a href="#contato" class="btn-glow">Saber mais</a>
+                        <a href="https://wa.me/5573981576870?text=Olá%2C%20quero%20saber%20mais%20sobre%20seus%20serviços!"
+                            class="btn-glow">Saber mais</a>
                     </div>
                 </div>
             </div>
@@ -87,72 +108,53 @@
             <div class="portfolio-list">
 
                 <div class="portfolio-item">
-                    <img src="public/images/site2.jpeg" alt="Projeto 2">
-                    <h3>Projeto Nome</h3>
+                    <img src="public/images/site2.jpeg" alt="Projeto 1">
+                    <h3>Projeto</h3>
                     <p>Breve descrição do projeto.</p>
-                    <a href="https://link-do-projeto.com" class="btn-glow" target="_blank">Ver Projeto</a>
+                    <a href="./src/pages/portfolioOne.html" class="btn-glow" target="_blank">Ver Projeto</a>
                 </div>
+
                 <div class="portfolio-item">
-                    <img src="public/images/12.jpeg" alt="Projeto 3">
-                    <h3>Projeto Nome</h3>
+                    <img src="public/images/12.jpeg" alt="Projeto 2">
+                    <h3>Projeto</h3>
                     <p>Breve descrição do projeto.</p>
-                    <a href="https://link-do-projeto.com" class="btn-glow" target="_blank">Ver Projeto</a>
+                    <a href="./src/pages/portfolioTwo.html" class="btn-glow" target="_blank">Ver Projeto</a>
                 </div>
 
                 <div class="portfolio-item">
                     <img src="public/images/site4.jpeg" alt="Projeto 3">
-                    <h3>Projeto Nome</h3>
+                    <h3>Projeto </h3>
                     <p>Breve descrição do projeto.</p>
-                    <a href="https://link-do-projeto.com" class="btn-glow" target="_blank">Ver Projeto</a>
+                    <a href="./src/pages/portfolioThree.html" class="btn-glow" target="_blank">Ver Projeto</a>
+                </div>
+
+
+                <div class="portfolio-item">
+                    <img src="public/images/7.jpeg" alt="Projeto 4">
+                    <h3>Projeto</h3>
+                    <p>Breve descrição do projeto.</p>
+                    <a href="./src/pages/portfolioFour.html" class="btn-glow" target="_blank">Ver Projeto</a>
                 </div>
 
                 <div class="portfolio-item">
-                    <img src="public/images/6.jpeg" alt="Projeto 3">
-                    <h3>Projeto Nome</h3>
+                    <img src="public/images/10.jpeg" alt="Projeto 5">
+                    <h3>Projeto</h3>
                     <p>Breve descrição do projeto.</p>
-                    <a href="https://link-do-projeto.com" class="btn-glow" target="_blank">Ver Projeto</a>
+                    <a href="./src/pages/portfolioFive.html" class="btn-glow" target="_blank">Ver Projeto</a>
                 </div>
 
                 <div class="portfolio-item">
-                    <img src="public/images/7.jpeg" alt="Projeto 3">
-                    <h3>Projeto Nome</h3>
+                    <img src="public/images/11.jpeg" alt="Projeto 6">
+                    <h3>Projeto</h3>
                     <p>Breve descrição do projeto.</p>
-                    <a href="https://link-do-projeto.com" class="btn-glow" target="_blank">Ver Projeto</a>
-                </div>
-
-                <div class="portfolio-item">
-                    <img src="public/images/8.jpeg" alt="Projeto 3">
-                    <h3>Projeto Nome</h3>
-                    <p>Breve descrição do projeto.</p>
-                    <a href="https://link-do-projeto.com" class="btn-glow" target="_blank">Ver Projeto</a>
-                </div>
-
-                <div class="portfolio-item">
-                    <img src="public/images/9.jpeg" alt="Projeto 3">
-                    <h3>Projeto Nome</h3>
-                    <p>Breve descrição do projeto.</p>
-                    <a href="https://link-do-projeto.com" class="btn-glow" target="_blank">Ver Projeto</a>
-                </div>
-
-                <div class="portfolio-item">
-                    <img src="public/images/10.jpeg" alt="Projeto 3">
-                    <h3>Projeto Nome</h3>
-                    <p>Breve descrição do projeto.</p>
-                    <a href="https://link-do-projeto.com" class="btn-glow" target="_blank">Ver Projeto</a>
-                </div>
-
-                <div class="portfolio-item">
-                    <img src="public/images/11.jpeg" alt="Projeto 3">
-                    <h3>Projeto Nome</h3>
-                    <p>Breve descrição do projeto.</p>
-                    <a href="https://link-do-projeto.com" class="btn-glow" target="_blank">Ver Projeto</a>
+                    <a href="./src/pages/portfolioSix.html" class="btn-glow" target="_blank">Ver Projeto</a>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <div class="blog-container">
+    <div id="blog" class="blog-container">
         <div class="blog-item">
             <img src="public/images/blog.jpeg" alt="Imagem do Post">
             <div class="blog-content">

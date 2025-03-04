@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
     color: #fcf5f5;
     text-align: center;
     line-height: 1.6;
+
 }
 
 .container {
@@ -58,20 +59,47 @@ nav ul li a:hover {
     color: #0011ff;
 }
 
+
 .hero {
-    background: url(../../public/images/astro5.jpeg);
+    background: url(../../public/images/1.png) no-repeat center center;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-    color: #ffffff;
-    text-align: center;
-    padding: 0 20px;
+    padding: 20px;
 }
+
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        min-height: 80vh;
+        /* Ajusta a altura mínima */
+        padding: 20px;
+        /* Adiciona espaçamento interno */
+    }
+
+    .hero-text {
+        width: 90%;
+        font-size: 1rem;
+        /* Reduz tamanho da fonte */
+    }
+
+    .btn-center {
+        bottom: 20px;
+        /* Ajusta a posição do botão */
+    }
+
+    .btn-center button {
+        padding: 10px 30px;
+        font-size: 6px;
+    }
+}
+
 
 
 .hero-overlay {
@@ -80,15 +108,8 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.327);
     z-index: 1;
-}
-
-@media (max-width: 768px) {
-    .hero {
-        height: 80vh;
-        /* Reduz altura para telas menores */
-    }
 }
 
 
@@ -96,6 +117,44 @@ nav ul li a:hover {
     position: relative;
     z-index: 2;
 }
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* Garante que ele fique sobre a imagem */
+    bottom: 50px;
+    /* Ajuste para a posição desejada */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centraliza horizontalmente */
+    z-index: 10;
+}
+
+.btn-center button {
+    background-color: #ff6702;
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-center button:hover {
+    background: #e65c00;
+}
+
+
+
+#ctaButton {
+    pointer-events: auto;
+}
+
+
 
 .btn-glow {
     display: inline-block;
